@@ -36,6 +36,7 @@ body
   margin:calc(0px - var(--borderwidth))
 }
 
+/* Style for section About*/
 #About
 {
   background-color: black;
@@ -43,6 +44,7 @@ body
   margin: 5px;
 }
 
+/* Style for section Projects */
 #Projects
 {
   background-color: purple;
