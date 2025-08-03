@@ -1,0 +1,69 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body 
+{
+  background-image: url("/glitter_purple_star_backdrop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: Verdana;
+}
+
+/* This is from hillhouse's free code snippets.
+          She has lots of free resources to add different backgrounds,
+          cursors, borders, and more! */
+         
+.yourcontainer 
+{
+  --borderwidth: 60px;
+  /* change the number here to make the border bigger or smaller! for best results keep it between 40-84px. */
+  border-image-source: url("/gothic-lace-frame-clipart-lg.png");
+
+  /* everything else here shouldn't need to be changed! */
+  border-width: var(--borderwidth, 60px);
+  border-style: solid;
+  border-color: transparent;
+  margin: var(--borderwidth, 60px);
+  border-image-slice: 84; /* don't change this! */
+  border-image-repeat: round; /* this makes the border smoothly fit any size container */
+  border-image-outset:1; /* this puts the border outside your container */
+}
+        
+.yourcontainer > .containercontent 
+{
+  margin:calc(0px - var(--borderwidth))
+}
+
+#About
+{
+  background-color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+#Projects
+{
+  background-color: purple;
+  padding: 5px;
+  margin: 5px;
+}
+
+.site-footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  border-top: 2px solid #4a4a4a;
+  margin-top: 40px;
+}
+.site-footer a {
+  color: #d5aaff;
+  text-decoration: none;
+  margin: 0 8px;
+}
+.site-footer a:hover {
+  text-decoration: underline;
+}
